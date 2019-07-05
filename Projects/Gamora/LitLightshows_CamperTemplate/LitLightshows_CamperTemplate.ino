@@ -1,4 +1,4 @@
- int bluePin = 12;
+int bluePin = 12;
 int greenPin = 11;
 int redPin = 10;
 int yellowPin = 9;
@@ -25,45 +25,39 @@ void setup() {
 
 void loop() {
   // THIS IS WHERE WE WILL PUT OUR CODE
-
-int randValue = random(0, 10);
-
-if(randValue == 0){
+  switchColour("Red");
   switchColour("Blue");
-  
-  }
+  switchColour("Yellow");
+  switchColour("Green");
+  setRGBColour(150, 0, 90);
 
-  
-switchColour("Red");
-switchColour("Blue");
-switchColour("Green");
-switchColour("Yellow");
-setRGBColour(0, 0, 255);
-
-delay(110);
-
-switchColour("Yellow");
-switchColour("Green");    
+  delay(100);
 
 
-
-delay(100);
-
-switchColour("Red");
-switchColour("Blue");
+  switchColour("Red");
+  switchColour("Yellow");
+  setRGBColour(90, 201, 150);
 
 
-delay(110);
-
-switchColour("Red");
-switchColour("Blue");
+  delay(100);
 
 
-delay(100);
+  int randValue = random(0, 12);
 
-switchColour("Yellow");
-switchColour("Green");
+
+  if(randValue == 4) {
+     switchColour("Blue")
+     ;setRGBColour(90,140,90)
+;  } else {
+     switchColour("Red");
+     setRGBColour(185, 160, 14)
+;  }
+
+   setRGBColour(random(0,255), random(0,255), random(0,255));
+
+
 }
+
 
 /**
  * Can use the function below to set the colour of the RGB Led.
@@ -76,7 +70,6 @@ void setRGBColour(int red, int green, int blue){
   analogWrite(RGBRedPin, red);
   analogWrite(RGBGreenPin, green);
   analogWrite(RGBBluePin, blue);
-  
 }
 
 /**
