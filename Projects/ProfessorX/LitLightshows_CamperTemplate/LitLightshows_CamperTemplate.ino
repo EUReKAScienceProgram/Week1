@@ -1,4 +1,4 @@
-wint bluePin = 12;
+int bluePin = 12;
 int greenPin = 11;
 int redPin = 10;
 int yellowPin = 9;
@@ -25,6 +25,38 @@ void setup() {
 
 void loop() {
   // THIS IS WHERE WE WILL PUT OUR CODE
+switchColour("Blue");
+switchColour("Red");
+switchColour("Green");
+switchColour("Yellow");
+setRGBColour(0, 0, 235);
+delay(10);
+switchColour("Blue");
+switchColour("Red");
+switchColour("Green");
+switchColour("Yellow");
+setRGBColour(0, 0, 220);
+delay(10);
+switchColour("Blue");
+switchColour("Red");
+switchColour("Green");
+switchColour("yellow");
+
+delay(1000);
+
+int randvalue = random(0
+
+
+
+
+delay(1000);
+switchColour("Red");
+switchColour("Green");
+
+
+
+
+
 
 }
 
