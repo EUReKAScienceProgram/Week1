@@ -31,7 +31,7 @@ void loop() {
   switchColour("Green");
   setRGBColour(150, 0, 90);
 
-  delay(152);
+  delay(100);
 
 
   switchColour("Red");
@@ -39,7 +39,7 @@ void loop() {
   setRGBColour(90, 201, 150);
 
 
-  delay(152);
+  delay(100);
 
 
   int randValue = random(0, 12);
