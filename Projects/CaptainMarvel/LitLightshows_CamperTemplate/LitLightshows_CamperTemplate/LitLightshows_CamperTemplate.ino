@@ -26,43 +26,49 @@ void setup() {
 void loop() {
   // THIS IS WHERE WE WILL PUT OUR CODE
 
-int randValue = random(0, 10);
+int randValue = random(0 ,2);
 
-if(randValue == 0){
-  switchColour("Blue");
-  
-  }
+if(randValue == 1) {
+  switchColour("Red");
+} else {
+  switchColour("Yellow");
+}
 
-  
-switchColour("Red");
-switchColour("Blue");
+setRGBColour(random(100,255), random(100,255), random(100,255));
+switchColour("Yellow");
 switchColour("Green");
-switchColour("Yellow");
-setRGBColour(0, 0, 255);
+setRGBColour(240, 200, 255);
 
-delay(110);
-
-switchColour("Yellow");
-switchColour("Green");    
-
-
-
-delay(100);
+delay(2000);
 
 switchColour("Red");
 switchColour("Blue");
+setRGBColour(240, 0, 128);
 
-
-delay(110);
-
-switchColour("Red");
-switchColour("Blue");
-
-
-delay(100);
+delay(1000);
 
 switchColour("Yellow");
 switchColour("Green");
+setRGBColour(240, 200, 255);
+
+delay(300);
+
+switchColour("Red");
+switchColour("Blue");
+setRGBColour(240, 0, 128);
+
+delay(1000);
+
+switchColour("Red");
+switchColour("Blue");
+setRGBColour(240, 0, 128);
+
+delay(2000);
+
+switchColour("Yellow");
+switchColour("Blue");
+setRGBColour(240, 100, 128);
+
 }
 
 /**
@@ -76,7 +82,6 @@ void setRGBColour(int red, int green, int blue){
   analogWrite(RGBRedPin, red);
   analogWrite(RGBGreenPin, green);
   analogWrite(RGBBluePin, blue);
-  
 }
 
 /**
