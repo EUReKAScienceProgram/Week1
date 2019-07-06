@@ -26,43 +26,6 @@ void setup() {
 void loop() {
   // THIS IS WHERE WE WILL PUT OUR CODE
 
-int randValue = random(0, 10);
-
-if(randValue == 0){
-  switchColour("Blue");
-  
-  }
-
-  
-switchColour("Red");
-switchColour("Blue");
-switchColour("Green");
-switchColour("Yellow");
-setRGBColour(0, 0, 255);
-
-delay(110);
-
-switchColour("Yellow");
-switchColour("Green");    
-
-
-
-delay(100);
-
-switchColour("Red");
-switchColour("Blue");
-
-
-delay(110);
-
-switchColour("Red");
-switchColour("Blue");
-
-
-delay(100);
-
-switchColour("Yellow");
-switchColour("Green");
 }
 
 /**
@@ -76,9 +39,8 @@ void setRGBColour(int red, int green, int blue){
   analogWrite(RGBRedPin, red);
   analogWrite(RGBGreenPin, green);
   analogWrite(RGBBluePin, blue);
-  
 }
-
+z
 /**
  * Can use this function to switch the state of any of the 4 coloured LEDs
  * This function takes a single parameter, either "Red", "Green", "Blue", or "Yellow".
